@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
+    <title>Gerenciador de Tarefas12</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Gerenciador de Tarefas</h1>
+        <form id="task-form" class="form-inline my-4">
+            <input type="text" id="task-input" class="form-control mr-2" placeholder="Digite a tarefa">
+            <button type="submit" class="btn btn-primary">Adicionar Tarefa</button>
+        </form>
+        <ul id="task-list" class="list-group"></ul>
+    </div>
+
+    <div class="modal fade" id="edit-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Tarefa</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body
+                ">
+                    <input type="text" id="edit-task-input" class="form-control"> 
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>
